@@ -6,7 +6,13 @@ CustomTimestamp for Typescript is a library that validates your custom timestamp
 ### Installation
 
 ```
-npm i custom-timestamp --save
+npm i @ebabel-eu/custom-timestamp --save
+```
+
+or
+
+```
+yarn add @ebabel-eu/custom-timestamp
 ```
 
 ### Basic usage

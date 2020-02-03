@@ -1,6 +1,6 @@
 {
   "name": "@ebabel-eu/custom-timestamp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom timestamp for typescript",
   "scripts": {
     "verify": "tslint ./lib/**",
