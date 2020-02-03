@@ -27,5 +27,12 @@ describe("CustomTimestamp test", () => {
     it("Should accept to use CustomTimestamp as a type", () => {
         const typical: CustomTimestamp = new CustomTimestamp(1234567891012);
         expect(typical instanceof CustomTimestamp).equal(true);
+        expect(CustomTimestamp.isCustomTimestamp(typical)).equal(true);
+    });
+
+    it("Should accept to work with the output of Date.now()", () => {
+        const nowOrNever: CustomTimestamp = new CustomTimestamp(Date.now());
+        expect(nowOrNever instanceof CustomTimestamp).equal(true);
+        expect(CustomTimestamp.isCustomTimestamp(nowOrNever)).equal(true);
     });
 });
