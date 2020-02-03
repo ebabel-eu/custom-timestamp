@@ -1,11 +1,11 @@
 {
-  "name": "custom-timestamp",
+  "name": "@ebabel-eu/custom-timestamp",
   "version": "1.0.0",
   "description": "Custom timestamp for typescript",
   "scripts": {
-    "verify": "./node_modules/.bin/tslint ./lib/**",
+    "verify": "tslint ./lib/**",
     "test": "npm run verify && mocha -r ts-node/register tests/*.spec.ts",
-    "build": "./node_modules/.bin/tsc lib/custom-timestamp -t es3 -m commonjs -d --outDir dist"
+    "build": "tsc lib/custom-timestamp -t es3 -m commonjs -d --outDir dist"
   },
   "author": "Thomas Amar",
   "license": "ISC",
@@ -18,7 +18,7 @@
   "types": "./dist/custom-timestamp.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com:ebabel-eu/custom-timestamp"
+    "url": "git+https://github.com/ebabel-eu/custom-timestamp.git"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
@@ -33,5 +33,13 @@
   "dependencies": {},
   "files": [
     "/dist/"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/ebabel-eu/custom-timestamp/issues"
+  },
+  "homepage": "https://github.com/ebabel-eu/custom-timestamp#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
 }
