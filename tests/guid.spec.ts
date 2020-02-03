@@ -24,4 +24,8 @@ describe("CustomTimestamp test", () => {
         expect(CustomTimestamp.isCustomTimestamp(right)).equal(true);
     });
 
+    it("Should accept to use CustomTimestamp as a type", () => {
+        const typical: CustomTimestamp = new CustomTimestamp(1234567891012);
+        expect(typical instanceof CustomTimestamp).equal(true);
+    });
 });
