@@ -5,7 +5,8 @@
   "scripts": {
     "verify": "tslint ./lib/**",
     "test": "npm run verify && mocha -r ts-node/register tests/*.spec.ts",
-    "build": "tsc lib/custom-timestamp -t es3 -m commonjs -d --outDir dist"
+    "build": "tsc lib/custom-timestamp -t es3 -m commonjs -d --outDir dist",
+    "publish": "npm publish --access public"
   },
   "author": "Thomas Amar",
   "license": "ISC",
